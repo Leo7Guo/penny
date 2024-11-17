@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manage URLs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            /* 垂直排列 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 竖直居中 */
+            height: 100vh;
+            /* 设置高度为100%视口高度 */
+            margin: 0;
+            /* 去掉默认的外边距 */
+        }
+
+        input,
+        button,
+        ul {
+            margin: 30px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        label {
+            margin-right: 5px;
+            /* 为标签添加一些间距 */
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 4px;
+            /* 下移10px */
+        }
+
+
+        .flex-container label,
+        .flex-container img,
+        .flex-container input {
+            margin-right: 10px;
+            /* 元素之间的间距 */
+        }
+
+        #editBtns {
+            display: flex;
+            justify-content: space-between;
+            /* 使按钮均匀间隔 */
+            padding: 30px;
+            /* 可选：添加一些内边距 */
+        }
+
+        #editBtns button {
+            margin: 0 20px;
+            /* 可选：为按钮添加左右间距 */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="urlInputs" class="flex-container">
+        <!-- <label for="urlInput">1</label>
+        <img src="./icons/edit.png" alt="Edit" id="editIcon">
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <input type="checkbox" id="enableCheckbox">
+        <div class="moveup-btn"></div> -->
+    </div>
+
+    <div id="editBtns">
+        <button id="editBtn">Edit</button>
+        <button id="addBtn">Add</button>
+        <button id="delBtn">Remove</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>
